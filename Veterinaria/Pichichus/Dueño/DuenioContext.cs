@@ -11,6 +11,8 @@ namespace VeterinariaPichichus.Pichichus.Dueño
     public class DuenioContext : DbContext
     {
         public DbSet<Duenio> Duenios { get; set; }
+               // public DbSet<Mascota> Mascotas { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source = MOURINOOS\\AXSQLEXPRESS ; Initial Catalog = Duenio;  Encrypt= true;trustservercertificate =true; Integrated Security = true");
