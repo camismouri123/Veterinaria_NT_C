@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using VeterinariaPichichus.veterinaria.Dueño;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VeterinariaPichichus.Pichichus.Dueño.Mascota
@@ -17,7 +18,7 @@ namespace VeterinariaPichichus.Pichichus.Dueño.Mascota
         public string Color { get; set; }
         public int Peso { get; set; }
 
-
+        public ICollection<Duenio> Duenios { get; set; } = new List<Duenio>();
 
         public Mascota(string nombre, TipoMascota tipo, int edad, string raza, string color, int peso)
         {

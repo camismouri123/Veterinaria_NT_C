@@ -15,6 +15,9 @@ namespace VeterinariaPichichus.veterinaria.Dueño
         public string Email { get; set; }
         [MaxLength(100)]
         public int Telefono { get; set; }
+        [Required]
+        public int MascotaId { get; set; }
+        public Mascota? MascotaDuenio {  get; set; }
 
 
         public Duenio() { }
