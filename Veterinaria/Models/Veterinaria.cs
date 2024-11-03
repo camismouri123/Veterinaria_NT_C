@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VeterinariaPichichus.Pichichus;
 
-namespace VeterinariaPichichus.veterinaria
+namespace VeterinariaPichichus.Models
 {
     public class Veterinaria
     {

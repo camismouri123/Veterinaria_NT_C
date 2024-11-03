@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VeterinariaPichichus.Pichichus.Dueño.Mascota
+namespace VeterinariaPichichus.Models
 {
-    public enum TipoMascota
+    public enum Sexo
     {
-        PERRO,
-        GATO,
-        OTRA,
+        MASCULINO,
+        FEMENINO,
     }
 }

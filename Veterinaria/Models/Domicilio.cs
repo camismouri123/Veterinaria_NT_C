@@ -1,4 +1,4 @@
-﻿namespace VeterinariaPichichus.veterinaria.Dueño
+﻿namespace VeterinariaPichichus.Models
 {
     public class Domicilio
     {

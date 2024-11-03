@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VeterinariaPichichus.veterinaria;
-using VeterinariaPichichus.veterinaria.Dueño;
-
-namespace VeterinariaPichichus.Pichichus
+﻿namespace VeterinariaPichichus.Models
 {
     public class Turno
     {
@@ -15,7 +7,7 @@ namespace VeterinariaPichichus.Pichichus
         public Servicio Tiposervicio { get; set; }
         public Duenio NombreDuenio { get; set; }
 
-        public Turno(DateTime fecha, DateTime hora,Servicio tipoServicio,Duenio duenio)
+        public Turno(DateTime fecha, DateTime hora, Servicio tipoServicio, Duenio duenio)
         {
             Fecha = fecha;
             Hora = hora;

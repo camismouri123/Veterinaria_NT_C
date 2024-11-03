@@ -1,4 +1,4 @@
-﻿namespace VeterinariaPichichus.Pichichus
+﻿namespace VeterinariaPichichus.Models
 {
     public class Servicio
     {

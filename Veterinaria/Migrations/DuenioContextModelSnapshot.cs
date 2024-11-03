@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using VeterinariaPichichus.Pichichus.Dueño;
+using VeterinariaPichichus.Context;
+
 
 #nullable disable
 
@@ -23,9 +24,9 @@ namespace VeterinariaPichichus.Migrations
 
             modelBuilder.Entity("VeterinariaPichichus.veterinaria.Dueño.Duenio", b =>
                 {
-                    b.Property<int>("DNI")
+                    b.Property<string>("DNI")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(100)");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DNI"));
 
