@@ -18,11 +18,11 @@ namespace VeterinariaPichichus.Context
             return estado;
         }
 
-        //public Duenio? BuscarDuenioPorDNI(string DNI)
-        //{
-        //   // Duenio? duenioBuscado = from d in duenios where d.DNI == DNI.select d).FirstOrDefault();
-        //    return duenioBuscado;
-        //}
+        public Duenio? BuscarDuenioPorDNI(string DNI)
+        {
+         Duenio? duenioBuscado = (from d in duenios where d.DNI == DNI select d).FirstOrDefault();
+            return duenioBuscado;
+        }
         public List<Duenio> ObtengoTodosLosDuenios()
         {
             return duenios;

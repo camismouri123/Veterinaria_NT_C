@@ -12,12 +12,12 @@ namespace VeterinariaPichichus.Models
         public string? Apellido { get; set; }
         [MaxLength(100)]
         public string? Email { get; set; }
-        [MaxLength(100)]
+        [MaxLength(15)]
         public int? Telefono { get; set; }
         [Required]
         public int MascotaId { get; set; }
         [Required]
-        public Mascota? MascotaDuenio { get; set; }
+        public Mascota MascotaDuenio { get; set; }
 
 
 
